@@ -41,3 +41,9 @@ body{
 .ul{
 	color: yellow;
 }
+
+.Menu-bar .li{
+font-size: 20px;
+display: inline-block;
+margin-right: -4px;
+}
