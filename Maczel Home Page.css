@@ -6,8 +6,8 @@ body{
 	width: 100vw;
 	height: 100vh;
 	margin: 0 auto;
-	
-	background-image: url("bg.jpg");
+	background-image: url("bg.jpg"); 
+	background-position: center;
 	
 
 }
@@ -50,6 +50,8 @@ list-style-type: none;
   background-color: red; opacity: 0.6;
   border: 3px;
   border-color: red;
+  width: 100vw;
+  text-align: center;
 }
 
 li {
@@ -62,8 +64,11 @@ li a {
   text-align: center;
   padding: 16px;
   text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+
+
 }
 
 li a:hover {
-  background-color: #111111;
+  background-color: yellow;
 }
