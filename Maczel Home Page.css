@@ -7,16 +7,11 @@ body{
 	height: 100vh;
 	margin: 0 auto;
 	
-	background-image: url(".jpg");
+	background-image: url("bg.jpg");
 	
 
 }
-.h1{
-	font-family: sans-serif;
 
-	
-	
-}
 .nav{
 	box-shadow:orange;
 
@@ -47,19 +42,18 @@ body{
 font-size: 15px;
 display: inline-block;
 margin-right: -4px;
-list-style-type: none;
 
 list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: red; opacity: 0.6;
   border: 3px;
   border-color: red;
 }
 
 li {
-  float: right;
+  float: left;
 }
 
 li a {
