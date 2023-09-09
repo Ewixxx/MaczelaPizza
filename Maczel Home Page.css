@@ -1,0 +1,43 @@
+body{
+	background-color: #FFD700;
+	background-repeat: no-repeat;
+	display: fixed;
+	size: 100%;
+	width: 100vw;
+	height: 100vh;
+	margin: 0 auto;
+	
+	background-image: url(".jpg");
+	
+
+}
+.h1{
+	font-family: sans-serif;
+	
+	
+}
+.nav{
+	box-shadow:orange;
+
+	
+}
+.navbar .navbar-brand{
+    color:red;
+    
+
+}
+.navbar .container-fluid .navbar-header .navbar-toggle .icon-bar{
+	color:yellow;
+	
+}
+.navbar{
+	box-shadow: 0 0 10px red;
+
+}
+.Navbar-header{
+	 color: yellow;
+}
+
+.ul{
+	color: yellow;
+}
