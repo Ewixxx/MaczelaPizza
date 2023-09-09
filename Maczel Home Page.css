@@ -1,7 +1,7 @@
 body{
 	background-color: #FFD700;
 	background-repeat: no-repeat;
-	display: fixed;
+	display: auto;
 	width: 100vw;
 	height: 100vh;
 	margin: 0 auto;
@@ -27,7 +27,7 @@ body{
 }
 .navbar{
 	box-shadow: 0 0 10px red;
-
+	z-index: 999;
 }
 .Navbar-header{
 	 color: yellow;
@@ -51,4 +51,10 @@ footer{
 	padding: 20px 0;
 	padding-right: 10px;
 
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+	
 }
