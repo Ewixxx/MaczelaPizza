@@ -2,13 +2,12 @@ body{
 	background-color: #FFD700;
 	background-repeat: no-repeat;
 	display: fixed;
-	size: 100%;
 	width: 100vw;
 	height: 100vh;
 	margin: 0 auto;
 	background-image: url("bg.jpg"); 
 	background-position: center;
-	
+	background-size:70% 100%;
 
 }
 
@@ -38,37 +37,18 @@ body{
 	color: yellow;
 }
 
-.Menu-bar{
-font-size: 15px;
-display: inline-block;
-margin-right: -4px;
 
-list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: red; opacity: 0.6;
-  border: 3px;
-  border-color: red;
-  width: 100vw;
-  text-align: center;
-}
+footer{
+	background-color:#2A3439;
+	color: white;
+	height: 18vh;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;	
+	font-size: 15px;
+	position:relative;top:460px;
+	margin:auto;
+	padding: 20px 0;
+	padding-right: 10px;
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-  font-family: "Times New Roman", Times, serif;
-
-
-}
-
-li a:hover {
-  background-color: yellow;
 }
