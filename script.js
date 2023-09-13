@@ -1,6 +1,17 @@
-const appSetting = {
+
+
+import{initializeApp} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
+import {add, addition} from "../New folder (2)/function"
+
+
+const appSettings = {
   databaseURL: "https://maczelapizza-default-rtdb.asia-southeast1.firebasedatabase.app/"
 }
+
+console.log (addition(2,3))
+const app = initializeApp(appSettings)
+const database = getDatabase(app)
+
 const inputFieldEl = document.getElementById("input-field")
 const addButtonEl = document.getElementById("add-button")
 
