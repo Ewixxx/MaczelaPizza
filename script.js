@@ -1,7 +1,7 @@
 
 
 import{initializeApp} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
-import {add, addition} from "../New folder (2)/function"
+import {addition} from "../New folder (2)/function"
 
 
 const appSettings = {
