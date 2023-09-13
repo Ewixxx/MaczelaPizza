@@ -10,10 +10,7 @@ console.log (add(2,3))
 const app = initializeApp(appSettings)
 const database = getDatabase(app)
 
-const pizzaDB =ref (database,"Pizza")
-
-
-
+const pizzaDB = ref (database,"Pizza")
 const inputFieldEl = document.getElementById("input-field")
 const addButtonEl = document.getElementById("add-button")
 
