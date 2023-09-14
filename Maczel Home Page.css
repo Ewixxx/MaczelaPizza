@@ -12,7 +12,7 @@ body{
 }
 
 .nav{
-	box-shadow:orange;
+	box-shadow:red;
 
 	
 }
@@ -51,12 +51,6 @@ footer{
 	padding-right: 10px;
 
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-	
-}
 .order-box {
 	display: flex;
 	flex-direction: column;
@@ -74,19 +68,19 @@ input{
 	color:white;
 	background-color: #696969;
 	margin-right: 10px;
-	position: relative;top:8px;
+	position: relative;top:5px;
 }
 button{
-	border: 0;
+	align-items: right;
 	border-radius: 8px;
 	padding: 10px;
 	background-color: red;
 	color: white;
-	position: relative;right:10px;
+	position: relative; left: 15px;
 	position: relative; top: 5px;
 
 }
 ::placeholder{
 	color:white;
-	font-size: 10px;
+	font-size: 15px;
 }
