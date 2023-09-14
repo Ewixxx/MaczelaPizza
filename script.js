@@ -13,9 +13,14 @@ const database = getDatabase(app)
 const pizzaDB = ref (database,"Pizza")
 const inputFieldEl = document.getElementById("input-field")
 const addButtonEl = document.getElementById("add-button")
+const cartListEl = document.getElementById("cart-item")
+
 
 addButtonEl.addEventListener("click",function(){
 let inputValue = inputFieldEl.value
- console.log('${inputValue} added to database')
+ console.log(`${inputValue} added to database`)
  push(pizzaDB, inputValue)
+inputFieldEl.value=""
+
+ cartListEl.innerHTML += `<li>${inputValue}</li>`
 })
