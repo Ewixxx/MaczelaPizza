@@ -71,7 +71,6 @@ input{
 	position: relative;top:5px;
 }
 button{
-	align-items: right;
 	border-radius: 8px;
 	padding: 10px;
 	background-color: red;
