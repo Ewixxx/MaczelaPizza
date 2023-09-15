@@ -22,8 +22,11 @@ input.addEventListener('keyup', (e) => {
       push(pizzaDB, inputValue)
       inputFieldEl.value=""
       cartListEl.innerHTML += `<li>${inputValue}</li>`
+     
     }
-})
+     })
+    
+
 
 addButtonEl.addEventListener("click",function(){
 let inputValue = inputFieldEl.value
