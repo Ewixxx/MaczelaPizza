@@ -1,11 +1,11 @@
 body{
-	background-color: #FFD700;
+	background-color: #f0cc01;
 	background-repeat: no-repeat;
 	display: auto;
 	width: 100vw;
 	height: 100vh;
 	margin: 0 auto;
-	background-image: url("../bg.jpg"); 
+	/* background-image: url("../bg.jpg");  */
 	background-position: center;
 	background-size:70% 100%;
 
@@ -91,12 +91,14 @@ button{
 	border-color: red;
 	padding: 5px;
 	margin: auto;
-	width: 500px;
+	width: 400px;
 	height: 500px;
 	text-align: center;
     background-image: url("../contact.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    color:rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
 
 }
