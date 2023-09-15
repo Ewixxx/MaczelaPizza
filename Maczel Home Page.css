@@ -97,3 +97,8 @@ button{
 	opacity: 0.6;
 	text-align: center;
 }
+
+.store-info .store-hours{
+    display: inline-flex;
+    position: relative; right:10px;
+}

@@ -94,11 +94,15 @@ button{
 	max-width: 560px;
 	height: 800px;
 	text-align: center;
-    background-color: rgb(31, 30, 30);
+    background-color: rgb(36, 35, 35);
     background-repeat: no-repeat;
     background-position: center;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-shadow: #FA3232;
     /* font-style: italic; */
+}
+.store-info .store-hours{
+    display: inline-flex;
+    position: relative; right:10px;
 }
