@@ -47,7 +47,7 @@ footer{
 	font-size: 15px;
 	position:relative;top:460px;
 	margin:auto;
-	padding: 20px 0;
+	padding: 10px 0;
 	padding-right: 10px;
 
 }
@@ -73,7 +73,7 @@ input{
 button{
 	border-radius: 8px;
 	padding: 10px;
-	background-color: red;
+	background-color: #FA3232;
 	color: white;
 	position: relative; left: 15px;
 	position: relative; top: 5px;
