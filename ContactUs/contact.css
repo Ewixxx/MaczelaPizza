@@ -7,7 +7,7 @@ body{
 	margin: 0 auto;
 	background-image: url("../contact.jpg"); 
 	background-position: center;
-	background-size:90% 100%;
+	background-size:95% 100%;
     
 
 }
@@ -63,7 +63,7 @@ input{
 	border: 0;
 	border-radius: 8px;
 	padding: 10px;
-	width: auto;
+	max-width: 45%;
 	opacity: 0.6 ;
 	color:white;
 	background-color: #696969;
