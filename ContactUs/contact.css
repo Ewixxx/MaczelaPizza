@@ -5,12 +5,12 @@ body{
 	width: 100vw;
 	height: 100vh;
 	margin: 0 auto;
-	/* background-image: url("../bg.jpg");  */
+	background-image: url("../contact.jpg"); 
 	background-position: center;
-	background-size:70% 100%;
+	background-size:90% 100%;
+    
 
 }
-
 .nav{
 	box-shadow:red;
 
@@ -91,14 +91,14 @@ button{
 	border-color: red;
 	padding: 5px;
 	margin: auto;
-	width: 400px;
+	width: 600px;
 	height: 500px;
 	text-align: center;
-    background-image: url("../contact.jpg");
+    /* background-image: url("../contact.jpg"); */
+    background-color: wheat;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
     color:rgb(0, 0, 0);
     font-family: 'Times New Roman', Times, serif;
-
+    box-shadow: #FA3232;
 }
