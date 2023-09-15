@@ -5,7 +5,7 @@ body{
 	width: 100vw;
 	height: 100vh;
 	margin: 0 auto;
-	background-image: url("ContactUs/bg.jpg"); 
+	background-image: url("../bg.jpg"); 
 	background-position: center;
 	background-size:70% 100%;
 
@@ -94,6 +94,9 @@ button{
 	margin: auto;
 	width: 400px;
 	height: 400px;
-	opacity: 0.6;
+	opacity: 0.8;
 	text-align: center;
+    background-image: url("../bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
