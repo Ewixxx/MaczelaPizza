@@ -83,3 +83,17 @@ button{
 	color:white;
 	font-size: 15px;
 }
+.info-box{
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	border: 10px;
+	border-radius: 8px;
+	border-color: red;
+	padding: 5px;
+	margin: auto;
+	width: 400px;
+	height: 400px;
+	opacity: 0.6;
+	text-align: center;
+}
