@@ -86,17 +86,17 @@ button{
 .info-box{
 	display: flex;
 	flex-direction: column;
-	background-color: white;
 	border: 10px;
 	border-radius: 8px;
 	border-color: red;
 	padding: 5px;
 	margin: auto;
-	width: 400px;
-	height: 400px;
-	opacity: 0.8;
+	width: 500px;
+	height: 500px;
 	text-align: center;
-    background-image: url("../bg.jpg");
+    background-image: url("../contact.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
+
 }
