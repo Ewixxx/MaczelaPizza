@@ -28,13 +28,13 @@ input.addEventListener('keyup', (e) => {
     
 
 
-addButtonEl.addEventListener("click",function(){
-let inputValue = inputFieldEl.value
- console.log(`${inputValue} added to database`)
- push(pizzaDB, inputValue)
- inputFieldEl.value=""
+// addButtonEl.addEventListener("click",function(){
+// let inputValue = inputFieldEl.value
+//  console.log(`${inputValue} added to database`)
+//  push(pizzaDB, inputValue)
+//  inputFieldEl.value=""
 
- cartListEl.innerHTML += `<li>${inputValue}</li>`
-})
+//  cartListEl.innerHTML += `<li>${inputValue}</li>`
+// })
 
 
