@@ -86,9 +86,7 @@ button{
 .info-box{
 	display: flex;
 	flex-direction: column;
-	border: 10px;
 	border-radius: 8px;
-	border-color: red;
 	padding: 5px;
 	margin: auto;
 	max-width: 560px;
@@ -99,8 +97,6 @@ button{
     background-position: center;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    box-shadow: #FA3232;
-    /* font-style: italic; */
 }
 .store-info .store-hours{
     display: inline-flex;
