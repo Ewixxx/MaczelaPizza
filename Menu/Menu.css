@@ -171,3 +171,6 @@ button:hover{
 .Navbar-header{
 	 color: yellow;
 }
+img:hover{
+    transform: scale(1.5);
+}
