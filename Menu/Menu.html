@@ -1,51 +1,107 @@
 <!DOCTYPE html>
 <html>
+   
+<head>
+    <title>Menu</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/e8fa2e31b4.js" crossorigin="anonymous"></script>
+    <link  rel="stylesheet" href="Menu.css">
 
-    <head> 
-        <title>Menu Page</title>
-          <meta charset="utf-8">
-          <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-          <link rel="stylesheet" href="Menu.css">
-          <script src="Menu.js" type="module"></script>
-          <link rel="shortcut icon" type="image/png" href="favicon.png">
 
-
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        
-          <meta name="msapplication-TileColor" content="#da532c">
-          <meta name="theme-color" content="#ffffff">
-        
-          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-          <link rel="manifest" href="/site.webmanifest">
-    </head>
-
-    <body>
-
-        <div class="menu-list" id="menu-list">
-            </div class="pizza-list" id = "pizza-list">
-                <div class="pizza_image">
-                <img src="#">
-                </div>
-
-                <div class="Price_List">$$$</div>
-                <div class="Item_Status" style="color:#36FF00">Available</div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+  
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+      <a class="navbar-brand" href="https://ewixxx.github.io/MaczelaPizza/">Maczela's Pizza</a>
+  
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="https://ewixxx.github.io/MaczelaPizza/" style="color:yellow">Home</a></li>
+          
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:yellow">Social Media <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://www.facebook.com/shopredbookstore/">Facebook</a></li>
+              <li><a href="https://www.instagram.com/shopredbookstore//">Instagram</a></li>
+              <li><a href="https://twitter.com/ShopRedPH">Twitter</a></li>
+            </ul>
+          </li>
+          <li><a href="" style="color:yellow">Menu</a></li>
+          <li><a href="ContactUs/index.html" style="color:yellow">Contact Us</a></li>
+        </ul>
+  
+        <ul class="nav navbar-nav navbar-right">
+          <a href="Cart-Item/Cart.html"><button id="add-button" >Cart<i class="fa-solid fa-cart-plus"></i></button></a>
+         
+  
+        </ul>
+      </div>
+      
+    </div>
+    
+  </nav>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidehead">
+                <div class="dots">
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle" style="color: #333;"></i>
+                    <i class="fa-solid fa-circle"></i>
+                </div>
+                <hr style="margin: 15px 0; border: 1px solid rgb(29, 28, 28)">
+            </div>
+            <div class="sidebody" style="height: 69vh;">
+                <div class="searchBar">
+                    <input placeholder="Search..." id="searchBar" name="searchBar" type="text">
+                    <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
+                </div>
+            </div>
+            <div class="sidefoot">
+                <hr style="margin: 15px 0; border: 1px solid rgb(29, 28, 28)">
+                <div class="social-icons">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-square-github"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="data">
+            <div class="top">
+                <p>+639668433672</p>
+                <p>ericreyes0122@gmail.com</p>
+            </div>
+            <div class="header">
+                <p>BUY EVERYTHING ONLINE</p>
+            </div>
+            <div class="body">
+                <div id="root"></div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-    </body>
+    </div>
+<script src="Menu.js"></script>
+</body>
 </html>
