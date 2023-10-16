@@ -17,7 +17,8 @@ searchInput.addEventListener("input", () => {
 function addToCart(menuItem) {
     const name = menuItem.getAttribute("data-name");
     const price = parseFloat(menuItem.getAttribute("data-price"));
-
+    const size = menuItem.getAttribute("data-size");
+    
     // Check if the item is already in the cart
     const existingCartItem = cartItemsList.querySelector(`[data-name="${name}"]`);
     if (existingCartItem) {
@@ -86,3 +87,4 @@ $(document).ready(function(){
       } 
     });
   });
+
