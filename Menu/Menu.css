@@ -10,6 +10,7 @@
 body{
     margin: 0vh;
     background-color: white;
+    background-image: url(bg.jpg);
 }
 .container{
     display: flex;
@@ -98,6 +99,7 @@ input{
     grid-gap: 20px;
 }
 .box{
+    background-color: whitesmoke;
     margin: 1px;
     display: flex;
     flex-direction: column;
@@ -106,6 +108,7 @@ input{
     border: 1px solid #333;
     border-radius: 5px;
     padding: 15px;
+    box-shadow: 0 0 10px red;
 }
 .img-box{
     max-width: 100%;
@@ -121,8 +124,8 @@ input{
     object-position: center;
 }
 .bottom{
-    margin-top: 20px;
-    width: 100%;
+    margin-top: 10px;
+    max-width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -130,12 +133,15 @@ input{
     justify-content: space-between;
     height: 110px;
 }
+.bottom p{
+    margin: -20px;
+}
 h2{
     font-size: 20px;
     color: orangered;
 }
 button{
-    width: 50%;
+    max-width: 70vw;
     position: relative;
     border: none;
     border-radius: 5px;
