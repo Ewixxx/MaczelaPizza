@@ -7,6 +7,7 @@ menuItems.forEach((menuItem) => {
     const addToCartButton = menuItem.querySelector(".add-to-cart");
     addToCartButton.addEventListener("click", () => {
         addToCart(menuItem);
+        alert("Added to Cart!");
     });
 });
 
