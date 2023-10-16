@@ -125,3 +125,27 @@ h1{
 
           
         }
+
+        .Pizza-sizes{
+            list-style: none;
+            text-align: center;
+            color:white;
+           
+        }
+        .Pizza-sizes li{
+            max-width: 400px;
+            margin: 10px;
+            display: inline-block;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            position: relative;top: 70px;
+          
+        }
+
+        .Pizza-sizes a{
+            color: white;
+            background-color: red;
+            border-radius: 10px;
+        }
+
+ 
