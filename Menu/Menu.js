@@ -1,3 +1,8 @@
+let list = document.querySelector('.sidebody');
+let listCard = document.querySelector('.listCard');
+let total = document.querySelector('.total');
+let quantity = document.querySelector('.quantity');
+
 const product = [
   {
       id: 0,
@@ -60,10 +65,30 @@ const displayItem = (items) => {
               <div class='bottom'>
                   <p>${title}</p>
                   <h2> ${price}.00</h2>
-              <button>Add to cart</button>
+              <button onclick="addItems(${title,price})">Add to cart</button>
               </div>
           </div>`
       )
   }).join('')
+
 };
 displayItem(categories);
+
+
+// Cart Item
+
+const cart = [];
+function addItems(title,price) {
+    const item = {title,price};
+    cart.push(item);
+    updateCartDisplay();
+}
+function updateCartDisplay() {
+    const cartList = document.getElementById('cart');
+    cartList.innerHTML = '';
+    for (const item of cart) {
+        const li = document.createElement('li');
+        li.textContent = `${item.title} - $${item.price.toFixed(2)}`;
+        cartList.appendChild(li);
+    }
+}

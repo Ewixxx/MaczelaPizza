@@ -23,61 +23,80 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-</head>
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-  
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-      <a class="navbar-brand" href="https://ewixxx.github.io/MaczelaPizza/">Maczela's Pizza</a>
-  
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="https://ewixxx.github.io/MaczelaPizza/" style="color:yellow">Home</a></li>
-          
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:yellow">Social Media <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="https://www.facebook.com/shopredbookstore/">Facebook</a></li>
-              <li><a href="https://www.instagram.com/shopredbookstore//">Instagram</a></li>
-              <li><a href="https://twitter.com/ShopRedPH">Twitter</a></li>
-            </ul>
-          </li>
-          <li><a href="" style="color:yellow">Menu</a></li>
-          <li><a href="../ContactUs/index.html" style="color:yellow">Contact Us</a></li>
-        </ul>
-  
-        <ul class="nav navbar-nav navbar-right">
-          <a href="Cart-Item/Cart.html"><button id="add-button" >Cart<i class="fa-solid fa-cart-plus"></i></button></a>
-         
-  
-        </ul>
-      </div>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
       
-    </div>
-    
-  </nav>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+          <a class="navbar-brand" href="https://ewixxx.github.io/MaczelaPizza/">Maczela's Pizza</a>
+      
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <input placeholder="Search" id="searchBar" name="searchBar" type="text">
+              <li class="active"><a href="https://ewixxx.github.io/MaczelaPizza/" style="color:yellow">Home</a></li>
+              
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color:yellow">Social Media <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://www.facebook.com/shopredbookstore/">Facebook</a></li>
+                  <li><a href="https://www.instagram.com/shopredbookstore//">Instagram</a></li>
+                  <li><a href="https://twitter.com/ShopRedPH">Twitter</a></li>
+                </ul>
+              </li>
+              <li><a href="" style="color:yellow">Menu</a></li>
+              <li><a href="../ContactUs/index.html" style="color:yellow">Contact Us</a></li>
+            </ul>
+            <div class="searchBar">
+              
+            <ul class="nav navbar-nav navbar-right">
+
+             
+
+            </ul>
+          </div>
+          
+        </div>
+        
+      </nav>
+</head>
+
 <body>
+
+
+
+<!-- Sidebar -->
+
     <div class="container">
-        <div class="sidebar">
+        <!-- <div class="sidebar">
             <div class="sidehead">
                 <div class="dots">
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-solid fa-circle" style="color: #333;"></i>
                     <i class="fa-solid fa-circle"></i>
                 </div>
+                <center><h2>Cart Item</h2></center>
                 <hr style="margin: 15px 0; border: 1px solid rgb(29, 28, 28)">
             </div>
             <div class="sidebody" style="height: 69vh;">
-                <div class="searchBar">
-                    <input placeholder="Search..." id="searchBar" name="searchBar" type="text">
-                    <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
-                </div>
+              <ul id="cart">
+
+              </ul>
+              <div class="list">
+
+              </div>
+
+              <div class="card">
+        
+                <ul class="listCard">
+                </ul>
+
+            </div>
             </div>
             <div class="sidefoot">
                 <hr style="margin: 15px 0; border: 1px solid rgb(29, 28, 28)">
@@ -88,20 +107,21 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
         <div class="data">
             <div class="top">
-                <p>+639668433672</p>
-                <p>ericreyes0122@gmail.com</p>
+          <marquee><h1 style="color: red;">Welcome to Maczela's Pizza</h1></marquee>
             </div>
             <div class="header">
-                <p>BUY EVERYTHING ONLINE</p>
+                <p style="color: yellow;">BUY EVERYTHING ONLINE</p>
             </div>
             <div class="body">
                 <div id="root"></div>
             </div>
         </div>
     </div>
+
+
 <script src="Menu.js"></script>
 </body>
 </html>
