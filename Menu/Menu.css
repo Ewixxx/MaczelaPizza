@@ -3,7 +3,7 @@ body{
     margin: 0vh;
     background-color: white;
     background-image: url("bg.jpg");
-
+    margin-bottom: 50px;
 }
 
 
@@ -29,9 +29,11 @@ button:hover{
     display: none;
 }
 
-.nav{
-	box-shadow:red;
-
+/* Sticky navbar */
+.navbar{
+    position:fixed;
+    top: 0px;
+    width: 100vw;
 	
 }
 .navbar .navbar-brand{
@@ -80,6 +82,7 @@ h1{
 }
         .menu-item {
             border: 1px solid #ccc;
+            border-radius: 10px;
             text-align: center;
             padding: 10px;
             margin: 20px;
@@ -90,7 +93,7 @@ h1{
             box-shadow: 0 0 10px red;
             max-width: 250px;
             max-height: 500px;
-            
+           
         }
 
         .cart-item {    
@@ -99,7 +102,7 @@ h1{
             padding: 10px;
             margin: 10px;
             display: flex;
-            background-color: rgb(204, 62, 62);
+            background-color: rgb(87, 85, 85);
             color: white;
             font-size: larger;
             justify-content: space-between;
@@ -121,7 +124,7 @@ h1{
             border: 0px;
             border-radius: 10px;
             max-height: 200vh;
-            min-width: 20vw;
+            min-width: 50vw;
             background-color: rgb(228, 227, 227);
             padding-bottom: 50px;
             position: absolute;
@@ -195,3 +198,104 @@ h1{
     margin-left: 10px;
  }
 
+/* Fixed position with 0 bottom will make the footer sticky */
+ footer{
+    display: flex;
+    position:fixed;
+    bottom: 0px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-width: 100vw;
+    height: 50px;
+    background-color: rgb(61, 61, 61);
+
+ }
+ footer ul li{
+    display: inline;
+    text-decoration: none;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 40px;
+    margin-right: 20px;
+    font-size: 20px;
+ }
+
+
+
+
+.billing{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid white;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50vw;
+    height: 70vh;
+    position: absolute;
+    top:0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+
+}
+
+.pop-billing{
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.billing h1{
+    color:rgb(255, 68, 0);
+    margin-bottom: 100px;
+}
+#name, #email, #phone , #address{
+    margin: 10px;
+    width: 1000px;
+}
+#submit-order{
+    height: 50px;
+    width: 150px;
+    background-color: rgb(255, 230, 0);
+    color:black;
+    font-weight: bolder;
+    box-shadow: 0 0 5px black;
+}
+#submit-order:hover{
+    background-color: rgb(11, 185, 11);
+    background-color: rgb(255, 187, 0);
+}
+#cancelbtn{
+    background-color: #575757;
+    height: 50px;
+    width: 150px;
+    box-shadow: 0 0 5px black;
+}
+
+#cancelbtn:hover{
+    background-color: rgb(129, 129, 129);
+    color:red;
+}
+
+
+#closebtn,#checkout{
+    width: 100px;
+    height: 40px;
+    box-shadow: 0 0 5px black;
+}
+#checkout{
+    width: 140px;
+    background-color: rgb(255, 230, 0);
+    margin-bottom: 10px;
+    color:black;
+    font-weight: bolder;
+   
+}
+#checkout:hover{
+    background-color: rgb(255, 187, 0);
+}
