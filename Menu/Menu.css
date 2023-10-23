@@ -138,7 +138,6 @@ h1{
             
         }
 
-
         .popcart{
 
             visibility: visible;
@@ -197,6 +196,22 @@ h1{
     font-size: 20px;
     margin-left: 10px;
  }
+ #closebtn,#checkout{
+    width: 100px;
+    height: 40px;
+    box-shadow: 0 0 5px black;
+}
+#checkout{
+    width: 140px;
+    background-color: rgb(255, 230, 0);
+    margin-bottom: 10px;
+    color:black;
+    font-weight: bolder;
+   
+}
+#checkout:hover{
+    background-color: rgb(255, 187, 0);
+}
 
 /* Fixed position with 0 bottom will make the footer sticky */
  footer{
@@ -223,7 +238,7 @@ h1{
 
 
 
-
+/* Billing Form */
 .billing{
     background-color: rgb(255, 255, 255);
     border: 1px solid white;
@@ -283,19 +298,3 @@ h1{
 }
 
 
-#closebtn,#checkout{
-    width: 100px;
-    height: 40px;
-    box-shadow: 0 0 5px black;
-}
-#checkout{
-    width: 140px;
-    background-color: rgb(255, 230, 0);
-    margin-bottom: 10px;
-    color:black;
-    font-weight: bolder;
-   
-}
-#checkout:hover{
-    background-color: rgb(255, 187, 0);
-}

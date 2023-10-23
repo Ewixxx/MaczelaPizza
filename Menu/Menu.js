@@ -1,33 +1,32 @@
-
 let cartlist = document.getElementById("cart-container")
 let billing = document.getElementById("billing")
 const Cart = document.getElementById("cart-icon")
 const Close = document.getElementById("closebtn")
 const checkout = document.getElementById("checkout")
-const cancelbtn =document.getElementById("cancelbtn")
+const cancelbtn = document.getElementById("cancelbtn")
 
 
 // Click the cart icon to collapse the cartlist
-Cart.addEventListener("click", function(){
+Cart.addEventListener("click", function () {
     cartlist.classList.add("popcart");
 
 })
 // Use ESC button on keyboard to close the cartlist
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
         cartlist.classList.remove("popcart");
         billing.classList.remove("pop-billing");
     }
 })
 
-Close.addEventListener("click", function(){
+Close.addEventListener("click", function () {
     cartlist.classList.remove("popcart");
 })
 
-checkout.addEventListener("click",function(){
+checkout.addEventListener("click", function () {
     billing.classList.add("pop-billing");
 })
-cancelbtn.addEventListener("click",function(){
+cancelbtn.addEventListener("click", function () {
     billing.classList.remove("pop-billing");
 })
 
@@ -57,7 +56,7 @@ function addToCart(menuItem) {
     const name = menuItem.getAttribute("data-name");
     const price = parseFloat(menuItem.getAttribute("data-price"));
     const size = menuItem.getAttribute("data-size");
-    
+
     // Check if the item is already in the cart
     const existingCartItem = cartItemsList.querySelector(`[data-name="${name}"]`);
     if (existingCartItem) {
@@ -122,7 +121,7 @@ function filterItems(query) {
 const submitOrderButton = document.querySelector("#submit-order");
 submitOrderButton.addEventListener("click", () => {
     // Get billing information
-    
+
     const name = document.querySelector("#name").value;
     const email = document.querySelector("#email").value;
     const phone = document.querySelector("#phone").value;
@@ -133,7 +132,7 @@ submitOrderButton.addEventListener("click", () => {
         alert("Please fill out all billing information.");
         return;
     }
-    else{
+    else {
         alert("Thank you for ordering!");
         cartlist.style.display = "none";
         billing.style.display = "none";
@@ -144,24 +143,24 @@ submitOrderButton.addEventListener("click", () => {
 
 
 // Smooth Scrolling Effect
-$(document).ready(function(){
+$(document).ready(function () {
 
-    $("a").on('click', function(event) {
-  
+    $("a").on('click', function (event) {
 
-      if (this.hash !== "") {
 
-        event.preventDefault();
-  
+        if (this.hash !== "") {
 
-        var hash = this.hash;
+            event.preventDefault();
 
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
 
-          window.location.hash = hash;
-        });
-      } 
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+
+                window.location.hash = hash;
+            });
+        }
     });
-  });
+});
