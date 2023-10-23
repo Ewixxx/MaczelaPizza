@@ -56,7 +56,7 @@ function addToCart(menuItem) {
     const name = menuItem.getAttribute("data-name");
     const price = parseFloat(menuItem.getAttribute("data-price"));
     const size = menuItem.getAttribute("data-size");
-
+    alert("added to cart!");
     // Check if the item is already in the cart
     const existingCartItem = cartItemsList.querySelector(`[data-name="${name}"]`);
     if (existingCartItem) {
@@ -144,21 +144,13 @@ submitOrderButton.addEventListener("click", () => {
 
 // Smooth Scrolling Effect
 $(document).ready(function () {
-
     $("a").on('click', function (event) {
-
-
         if (this.hash !== "") {
-
             event.preventDefault();
-
-
             var hash = this.hash;
-
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
             }, 800, function () {
-
                 window.location.hash = hash;
             });
         }

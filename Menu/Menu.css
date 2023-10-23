@@ -139,7 +139,8 @@ h1{
         }
 
         .popcart{
-
+            position: fixed;
+            left: 50%;
             visibility: visible;
             top:50%;
             transform: translate(-50%,-50%) scale(1);
@@ -261,13 +262,18 @@ h1{
 }
 
 .pop-billing{
+    position: fixed;
+    left:50%;
     visibility: visible;
     top:50%;
     transform: translate(-50%,-50%) scale(1);
 }
 .billing h1{
     color:rgb(255, 68, 0);
-    margin-bottom: 100px;
+    margin-bottom: 10px;
+}
+#billing-form{
+    width: 50vw;
 }
 #name, #email, #phone , #address{
     margin: 10px;
@@ -280,6 +286,7 @@ h1{
     color:black;
     font-weight: bolder;
     box-shadow: 0 0 5px black;
+    margin-bottom: 10px;
 }
 #submit-order:hover{
     background-color: rgb(11, 185, 11);
