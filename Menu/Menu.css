@@ -3,6 +3,7 @@ body{
     margin: 0vh;
     background-color: white;
     background-image: url("bg.jpg");
+
 }
 
 
@@ -38,6 +39,7 @@ button:hover{
     
 
 }
+
 .navbar .container-fluid .navbar-header .navbar-toggle .icon-bar{
 	color:yellow;
 	
@@ -45,6 +47,7 @@ button:hover{
 .navbar{
 	box-shadow: 0 0 10px red;
 	z-index: 999;
+    
 }
 .Navbar-header{
 	 color: yellow;
@@ -90,23 +93,58 @@ h1{
             
         }
 
-        .cart-item {
+        .cart-item {    
+            
             border: 1px solid #ccc;
             padding: 10px;
             margin: 10px;
+            display: flex;
+            background-color: rgb(204, 62, 62);
             color: white;
-            background-color: red; opacity: 0.8;
-            list-style: none;
+            font-size: larger;
+            justify-content: space-between;
+            margin-right: 40px;
         }
 
         .cart-item img {
             width: 80px;
             height: 80px;
-            margin-right: 10px;
+      
         }
 
-        #cart-container {
-            display: none;
+        .cart-container {
+            overflow-x: hidden;
+            margin-top: 50px;
+            padding-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 0px;
+            border-radius: 10px;
+            max-height: 200vh;
+            min-width: 20vw;
+            background-color: rgb(228, 227, 227);
+            padding-bottom: 50px;
+            position: absolute;
+            top:0%;
+            left: 50%;
+            transform: translate(-50%,-50%) scale(0.1);
+            text-align: center;
+            color: rgb(0, 0, 0);
+            visibility: hidden;
+            transition: transform 0.4s, top 0.4s;
+            
+        }
+
+
+        .popcart{
+
+            visibility: visible;
+            top:50%;
+            transform: translate(-50%,-50%) scale(1);
+        }
+        #cart-container h1{
+            color: maroon;
+            text-align: center;
         }
         
         .menu-item img{
@@ -148,4 +186,12 @@ h1{
             border-radius: 10px;
         }
 
- 
+#cart-icon{
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 10px;
+ }
+

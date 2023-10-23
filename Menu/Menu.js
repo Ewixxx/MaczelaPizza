@@ -1,3 +1,21 @@
+
+let cartlist = document.getElementById("cart-container")
+const Cart = document.getElementById("cart-icon")
+const Close = document.getElementById("closebtn")
+Cart.addEventListener("click", function(){
+    cartlist.classList.add("popcart");
+
+})
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        cartlist.classList.remove("popcart");
+    }
+})
+Close.addEventListener("click", function(){
+    cartlist.classList.remove("popcart");
+})
+
 const searchInput = document.getElementById("search");
 const menuItems = document.querySelectorAll(".menu-item");
 const cartContainer = document.getElementById("cart-container");
@@ -7,7 +25,7 @@ menuItems.forEach((menuItem) => {
     const addToCartButton = menuItem.querySelector(".add-to-cart");
     addToCartButton.addEventListener("click", () => {
         addToCart(menuItem);
-        alert("Added to Cart!");
+
     });
 });
 
@@ -67,25 +85,51 @@ function filterItems(query) {
     });
 }
 
-$(document).ready(function(){
 
-    $("a").on('click', function(event) {
-  
 
-      if (this.hash !== "") {
+function calculateTotal() {
+    const totalAmount = document.querySelector("#total-amount");
+    const total = menuItems.reduce((acc, menuItems) => acc + menuItems.price, 0);
+    totalAmount.textContent = total.toFixed(2);
+}
 
-        event.preventDefault();
-  
 
-        var hash = this.hash;
 
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
+// // Event listener for submitting the order
+// const submitOrderButton = document.querySelector("#submit-order");
+// submitOrderButton.addEventListener("click", () => {
+//     // Get billing information
+//     const name = document.querySelector("#name").value;
+//     const email = document.querySelector("#email").value;
+//     const phone = document.querySelector("#phone").value;
+//     const address = document.querySelector("#address").value;
 
-          window.location.hash = hash;
-        });
-      } 
-    });
-  });
+//     // Validate billing information
+//     if (!name || !email || !phone || !address) {
+//         alert("Please fill out all billing information.");
+//         return;
+//     }
+
+//     // Display the order summary
+//     const orderSummaryList = document.querySelector("#order-summary-list");
+//     orderSummaryList.innerHTML = "";
+//     const product = document.getElementById("");
+//     menuItems.forEach(name => {
+//         const orderItem = document.createElement("li");
+//         orderItem.textContent = menuItems.name;
+//         orderSummaryList.appendChild(orderItem);
+//     });
+
+//     // Calculate and display the total amount
+//     calculateTotal();
+
+//     // Hide the billing section and show the order summary
+//     document.querySelector(".billing").style.display = "visible";
+//     document.querySelector(".order-summary").style.display = "block";
+// });
+
+
+
+
+
 
