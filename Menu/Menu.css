@@ -190,12 +190,14 @@ h1{
         }
 
 #cart-icon{
-    margin-top: 10px;
+    margin-top: 5px;
     border-radius: 10px;
     width: 50px;
     height: 30px;
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 10px;
+    background-color: #1f1f1f;
+    color: red;
  }
  #closebtn,#checkout{
     width: 100px;
