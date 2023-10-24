@@ -12,7 +12,7 @@ h2{
     font-size: 20px;
     color: orangered;
 }
-button{
+.add-to-cart{
     width: 10 vw;
     position: relative;
     border: none;
@@ -54,7 +54,7 @@ button:hover{
 .Navbar-header{
 	 color: yellow;
 }
-img:hover{
+.menu-item img:hover{
     transform: scale(1.5);
 }
 
@@ -123,7 +123,7 @@ h1{
             margin-right: auto;
             border: 0px;
             border-radius: 10px;
-            max-height: 200vh;
+            max-height: 220vh;
             min-width: 50vw;
             background-color: rgb(228, 227, 227);
             padding-bottom: 50px;
@@ -139,10 +139,13 @@ h1{
         }
 
         .popcart{
+            padding-right: 20px;
+            padding-left: 20px;
+            display: block;
             position: fixed;
             left: 50%;
             visibility: visible;
-            top:50%;
+            top:42%;
             transform: translate(-50%,-50%) scale(1);
         }
         #cart-container h1{
@@ -189,56 +192,63 @@ h1{
             border-radius: 10px;
         }
 
+
+        #empty-cart-message{
+            margin-left: auto;
+            margin-right: 5%;
+        }
+
+        #empty{
+            margin-right: 50px;
+            width: 250px;
+            height: 200px;
+        }
+
+
 #cart-icon{
     margin-top: 5px;
     border-radius: 10px;
     width: 50px;
-    height: 30px;
-    font-size: 30px;
+    height: 40px;
+    font-size: 25px;
     margin-left: 10px;
     background-color: #1f1f1f;
     color: red;
  }
- #closebtn,#checkout{
-    width: 100px;
+.remove-from-cart{
+    background-color: red;
+    height: 30px;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+ 
+#checkout{    
     height: 40px;
     box-shadow: 0 0 5px black;
-}
-#checkout{
     width: 140px;
     background-color: rgb(255, 230, 0);
     margin-bottom: 10px;
     color:black;
     font-weight: bolder;
-   
+   border-radius: 10px;
 }
 #checkout:hover{
     background-color: rgb(255, 187, 0);
 }
 
-/* Fixed position with 0 bottom will make the footer sticky */
- footer{
-    display: flex;
-    position:fixed;
-    bottom: 0px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    min-width: 100vw;
-    height: 50px;
-    background-color: rgb(61, 61, 61);
-
- }
- footer ul li{
-    display: inline;
-    text-decoration: none;
-    text-align: center;
-    padding-right: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    font-size: 20px;
- }
+#closebtn{
+    background-color: none;
+    font-size:20px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 50px;
+}
+#closebtn:hover{
+    background-color: red;
+    color:white;
+}
 
 
 
@@ -308,3 +318,26 @@ h1{
 }
 
 
+/* Fixed position with 0 bottom will make the footer sticky */
+footer{
+    display: flex;
+    position:fixed;
+    bottom: 0px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-width: 100vw;
+    height: 50px;
+    background-color: rgb(61, 61, 61);
+
+ }
+ footer ul li{
+    display: inline;
+    text-decoration: none;
+    text-align: center;
+    padding-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+ }

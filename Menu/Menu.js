@@ -32,7 +32,7 @@ cancelbtn.addEventListener("click", function () {
 
 
 
-
+const ordersummary = document.getElementById("order-summary");
 const searchInput = document.getElementById("search");
 const menuItems = document.querySelectorAll(".menu-item");
 const cartContainer = document.getElementById("cart-container");
@@ -40,6 +40,8 @@ const cartItemsList = document.getElementById("cart-items");
 const totalAmountElement = document.getElementById("total-amount");
 
 let totalAmount = 0; // Initialize the total amount
+let itemCount = 0;
+const emptyCartMessage = document.getElementById("empty-cart-message");
 
 menuItems.forEach((menuItem) => {
     const addToCartButton = menuItem.querySelector(".add-to-cart");
@@ -55,7 +57,7 @@ searchInput.addEventListener("input", () => {
 function addToCart(menuItem) {
     const name = menuItem.getAttribute("data-name");
     const price = parseFloat(menuItem.getAttribute("data-price"));
-    const size = menuItem.getAttribute("data-size");
+
     alert("added to cart!");
     // Check if the item is already in the cart
     const existingCartItem = cartItemsList.querySelector(`[data-name="${name}"]`);
@@ -67,7 +69,7 @@ function addToCart(menuItem) {
         quantityElement.textContent = newQuantity;
         const totalPriceElement = existingCartItem.querySelector(".total-price");
         const total = price * newQuantity;
-        totalPriceElement.textContent = `₱${total.toFixed(2)}`;
+        totalPriceElement.textContent = `${total.toFixed(2)}`;
     } else {
         // If it's a new item, add it to the cart
         const cartItem = document.createElement("li");
@@ -88,7 +90,11 @@ function addToCart(menuItem) {
             cartItemsList.removeChild(cartItem);
             const total = price * parseInt(cartItem.querySelector(".quantity").textContent);
             totalAmount -= total;
-            totalAmountElement.textContent = `₱${totalAmount.toFixed(2)}`;
+            totalAmountElement.textContent = `${totalAmount.toFixed(2)}`;
+
+            if (cartItemsList.children.length === 1) { // 1 is for the "Your cart is empty" message
+                document.getElementById("empty-cart-message").style.display = "block";
+            }
         });
     }
 
@@ -98,6 +104,17 @@ function addToCart(menuItem) {
 
     // Show the cart container
     cartContainer.style.display = "block";
+
+    // Remove the empty cart image if the cart has item
+
+    if (itemCount === 0) {
+        emptyCartMessage.style.display = "none";
+
+    }else{
+        emptyCartMessage.style.display = "block";
+        ordersummary.style.display = "none";
+    }
+    document.getElementById("empty-cart-message").style.display = "none";
 }
 
 
@@ -107,6 +124,7 @@ function filterItems(query) {
         const name = menuItem.getAttribute("data-name").toLowerCase();
         if (name.includes(query)) {
             menuItem.style.display = "inline-block";
+
         } else {
             menuItem.style.display = "none";
         }
