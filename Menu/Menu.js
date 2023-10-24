@@ -32,15 +32,15 @@ cancelbtn.addEventListener("click", function () {
 
 
 
-const ordersummary = document.getElementById("order-summary");
 const searchInput = document.getElementById("search");
 const menuItems = document.querySelectorAll(".menu-item");
 const cartContainer = document.getElementById("cart-container");
 const cartItemsList = document.getElementById("cart-items");
 const totalAmountElement = document.getElementById("total-amount");
+const cartItemCount = document.getElementById("cart-item-count");
 
 let totalAmount = 0; // Initialize the total amount
-let itemCount = 0;
+let itemCount = 0;// Initialize  Cart Item Qty
 const emptyCartMessage = document.getElementById("empty-cart-message");
 
 menuItems.forEach((menuItem) => {
@@ -58,7 +58,7 @@ function addToCart(menuItem) {
     const name = menuItem.getAttribute("data-name");
     const price = parseFloat(menuItem.getAttribute("data-price"));
 
-    alert("added to cart!");
+    // alert("added to cart!");
     // Check if the item is already in the cart
     const existingCartItem = cartItemsList.querySelector(`[data-name="${name}"]`);
     if (existingCartItem) {
@@ -83,7 +83,15 @@ function addToCart(menuItem) {
             <button class="remove-from-cart">Remove</button>
         `;
         cartItemsList.appendChild(cartItem);
+        itemCount += 1;
+        cartItemCount.textContent = itemCount;
 
+        
+        function updateCartItemCountOnRemove() {
+            itemCount -= 1;
+            itemCount = Math.max(0, itemCount); 
+            cartItemCount.textContent = itemCount;
+        }
         const removeFromCartButton = cartItem.querySelector(".remove-from-cart");
         removeFromCartButton.addEventListener("click", () => {
             // When an item is removed, update the total amount
@@ -91,10 +99,11 @@ function addToCart(menuItem) {
             const total = price * parseInt(cartItem.querySelector(".quantity").textContent);
             totalAmount -= total;
             totalAmountElement.textContent = `${totalAmount.toFixed(2)}`;
-
+            updateCartItemCountOnRemove();
             if (cartItemsList.children.length === 1) { // 1 is for the "Your cart is empty" message
                 document.getElementById("empty-cart-message").style.display = "block";
             }
+   
         });
     }
 
@@ -106,14 +115,13 @@ function addToCart(menuItem) {
     cartContainer.style.display = "block";
 
     // Remove the empty cart image if the cart has item
-
     if (itemCount === 0) {
         emptyCartMessage.style.display = "none";
 
     }else{
         emptyCartMessage.style.display = "block";
-        ordersummary.style.display = "none";
     }
+    // Show the empty cart list again if item remove from cart
     document.getElementById("empty-cart-message").style.display = "none";
 }
 

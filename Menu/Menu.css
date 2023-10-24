@@ -22,6 +22,13 @@ h2{
     cursor: pointer;
     color: white;
 }
+#cart-item-count{
+    position: relative;
+    top:-50px;
+    left:15px;
+    color: yellow;
+    font-size: 20px;
+}
 button:hover{
     background-color: orangered;
 }
@@ -351,4 +358,7 @@ footer{
     margin-right: 20px;
     margin-bottom: 10px;
     font-size: 20px;
+ }
+ footer a{
+    color: yellow;
  }
