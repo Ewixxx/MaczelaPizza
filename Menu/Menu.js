@@ -120,8 +120,8 @@ function filterItems(query) {
 // // Event listener for submitting the order
 const submitOrderButton = document.querySelector("#submit-order");
 submitOrderButton.addEventListener("click", () => {
-    // Get billing information
 
+    // Get billing information
     const name = document.querySelector("#name").value;
     const email = document.querySelector("#email").value;
     const phone = document.querySelector("#phone").value;
