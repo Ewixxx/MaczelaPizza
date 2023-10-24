@@ -102,16 +102,19 @@ h1{
             padding: 10px;
             margin: 10px;
             display: flex;
-            background-color: rgb(87, 85, 85);
-            color: white;
+            background-color: rgba(255, 230, 0, 0.7);
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
             font-size: larger;
+            font-weight: bolder;
             justify-content: space-between;
+            box-shadow: 0 0 8px black;
             margin-right: 40px;
         }
 
         .cart-item img {
-            width: 80px;
-            height: 80px;
+            width: 50px;
+            height: 50px;
       
         }
 
@@ -217,12 +220,15 @@ h1{
  }
 .remove-from-cart{
     background-color: red;
+    color:white;
     height: 30px;
     border: 0px;
     border-radius: 10px;
     box-shadow: 0 0 5px rgb(0, 0, 0);
 }
- 
+.remove-from-cart:hover{
+    color:black
+}
 #checkout{    
     height: 40px;
     box-shadow: 0 0 5px black;
@@ -254,6 +260,8 @@ h1{
 
 /* Billing Form */
 .billing{
+    background-image: url("billing-bg.jpg");
+    background-position:center;
     background-color: rgb(255, 255, 255);
     border: 1px solid white;
     padding-bottom: 20px;
@@ -300,6 +308,7 @@ h1{
     font-weight: bolder;
     box-shadow: 0 0 5px black;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 #submit-order:hover{
     background-color: rgb(11, 185, 11);
@@ -310,6 +319,8 @@ h1{
     height: 50px;
     width: 150px;
     box-shadow: 0 0 5px black;
+    color:white;
+    border-radius: 10px;
 }
 
 #cancelbtn:hover{
