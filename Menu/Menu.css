@@ -335,7 +335,83 @@ h1{
     color:red;
 }
 
+@media (max-width: 475px) {
+    .billing{
+        background-image: url("billing-bg.jpg");
+        background-position:600px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid white;
+        padding-bottom: 20px;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+        height: 70vh;
+        position: absolute;
+        top:0%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(0.1);
+        text-align: center;
+        color: rgb(0, 0, 0);
+        visibility: hidden;
+        transition: transform 0.4s, top 0.4s;
+    
+    }
+    
+    .pop-billing{
+        position: fixed;
+        left:50%;
+        visibility: visible;
+        top:50%;
+        transform: translate(-50%,-50%) scale(1.190);
+    }
+    .billing h1{
+        margin-top: 30px;
+        color:rgb(255, 68, 0);
+        margin-bottom: 10px;
+    }
+    #billing-form{
 
+        width: 200vw;
+    }
+    #name, #email, #phone , #address{
+        margin: 10px;
+        width: 500vw;
+        position: relative;
+        right: 205px;
+    }
+    #submit-order{
+        height: 30px;
+        width: 150px;
+        background-color: rgb(255, 230, 0);
+        color:black;
+        font-weight: bolder;
+        box-shadow: 0 0 5px black;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        position: relative;
+        right: 200px;
+    }
+    #submit-order:hover{
+        background-color: rgb(11, 185, 11);
+        background-color: rgb(255, 187, 0);
+    }
+    #cancelbtn{
+        background-color: #575757;
+        height: 30px;
+        width: 150px;
+        box-shadow: 0 0 5px black;
+        color:white;
+        border-radius: 10px;
+        position: relative;
+        right: 200px;
+    }
+    
+    #cancelbtn:hover{
+        background-color: rgb(129, 129, 129);
+        color:red;
+    }
+}
 /* Fixed position with 0 bottom will make the footer sticky */
 footer{
     display: flex;
@@ -362,3 +438,57 @@ footer{
  footer a{
     color: yellow;
  }
+
+.receipt{
+    width: 400px;
+    color: white;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding:40px;
+    box-shadow: 0 0 15px white;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    position: absolute;
+    top:0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.pop-receipt{
+    position: fixed;
+    left:50%;
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%,-50%) scale(1.190);
+}
+.receipt-table th{
+
+  padding-right:30px ;
+}
+
+.receipt-table td{
+    text-align: center;
+    padding-right:30px ; 
+    margin-right: 150px;  
+}
+
+.total-row{
+    margin-top: 20px;
+}
+.receipt button{
+    width: 100px;
+    background: none;
+    background-color: rgb(255, 68, 0);
+    border-radius: 5px;
+    position: relative;
+    left: 45px;
+    border: 0;
+    margin-left: 10px;
+    font-size: larger;
+
+}
+.receipt button:hover{
+background-color: rgb(139, 39, 2);
+}
